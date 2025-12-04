@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+<title>
+Zakotaku | Robin Mendoza
+</title>
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+/>
+<meta charset="utf-8"/>
+<meta
+name="description"
+content="Portfolio for game designer Robin Mendoza."
+/>
+<meta
+name="author"
+content="Robin Mendoza"
+/>
+
+<link
+rel="stylesheet"
+media="screen and (orientation: landscape)"
+href="landscape.css"
+/>
+<link
+rel="stylesheet"
+media="screen and (orientation: portrait)"
+href="portrait.css"
+/>
+<link
+rel="icon"
+href="images/icons/favicon.png"
+/>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik|Averia|Kosugi|Kosugi Maru|Averia Libre|Averia Serif Libre">
+
+</head>
+
+<body>
+
+<header>
+<a href="http://robinmendoza.net">
+<img src="images/icons/monogram.svg">
+</header>
+
+<nav>
+<li>
+<a href="#top" id="current">
+Zakotaku
+</a>
+<menu>
+<li>
+<a href="#syntax">
+Syntax
+</a>
+<li>
+<a href="#dictionary">
+Dictionary
+</a>
+</li>
+<li>
+<a href="#formatting">
+Formatting
+</a>
+</li>
+<li>
+<a href="#transcripts">
+Transcripts
+</a>
+</li>
+<li>
+<a href="#acknowledgements">
+Acknowledgements
+</a>
+</li>
+</menu>
+</li>
+<li>
+<a href="essays.html">
+Talks & essays
+</a>
+</li>
+<li>
+<a href="graphics.html">
+Graphics
+</a>
+</li>
+<li>
+<a href="photography.html">
+Photography
+</a>
+</li>
+<li>
+<a href="controllers.html">
+Controllers
+</a>
+</li>
+<li>
+<a href="screenplays.html">
+Screenplays
+</a>
+</li>
+<li>
+<a href="favorite-games.html">
+Favorite 64
+</a>
+</li>
+</nav>
+
+<main id="top">
+
+<hgroup>
+<h1>
+Zakotaku
+</h1>
+</hgroup>
+
+<section id="overview">
+
+<p class="links">
+<a href="pdf/Big IF No More Jockeys & the legacy of the car game NarraScope 2025.pdf">
+GitHub
+</a>
+</p>
+
+<figure class="banner">
+</figure>
+
+<p>
+<b>Zakotaku</b> ( 雑魚拓 ) is a light­weight <dfn>not­ation</dfn> scheme for study­ing & trans­cribing <dfn>arcade action games</dfn>: shmups, run 'n guns, beat 'em ups &c. — whether for routing a <abbr title="one-credit clear">1cc</abbr> or high score, analy­zing a parti­cularly tricky boss' attack patterns, or sketch­ing & story­boarding your own sad­istic sort­ies.
+</p>
+<p>
+You could think of it as a cross between sheet music engraver, <a href="https://fountain.io/" target="_blank">Fountain</a>, GameFAQs & <a href="https://en.wikipedia.org/wiki/Brevity_code" target="_blank" class="wiki">brevity code</a>; here's an example:
+</p>
+
+<pre>
+<code>
+farm $ ^ 50 > k/o mg
+</code>
+</pre>
+
+<hr/>
+
+<h3>
+Rehearsal & the arcade ethos
+</h3>
+
+<p>
+Games that em­body the arcade ethos are meant to be played <b>over</b> & over — to be pract­iced & mast­ered, not mere­ly toured for content & then dis­pensed with; though they may <em>seem</em> simp­listic on the sur­face, attempt­ing a <abbr title="one-credit clear">1cc</abbr> or high score in a well-crafted <abbr title="shooting game, shmup">STG</abbr> like <cite>Battle Garegga</cite> or <cite>Ketsui</cite> can reveal an <em>aston­ishing</em> level of depth & nuance to the level compositions, enemy behaviors, re­source economies & scoring syst­ems.
+</p>
+<p>
+High-density decision-making + real­time pressure (especially in auto­scrollers which instant­iate hazards on a fixed schedule) means players must do most of their strategizing out­side of regular game­play, be­fore & be­tween runs; the general term for this planning phase is <dfn>routing</dfn>, while <dfn>memo</dfn> is often used to refer more specifically to un­react­able chump checks, traps & precise timings learned by rote.
+</p>
+<p>
+Re­hearsing, re­fining, cannibal­izing & clari­fying these strat­egies can be clunky with­out an efficient scheme for taking notes; now, notes are no replace­ment for re­play re­view, dis­cussion & save states, but since <em>danmaku 2-all = arcade stick Chopin étude</em> seems to be such a common sentiment, why not take it a little more literally?
+</p>
+
+<hr>
+
+<h3>
+Optimization & individuality
+</h3>
+
+<p>
+Watch a superplay of <cite>Progear</cite> or <cite>Final Fight</cite> & you might think <q>Alright, follow their line, don't deviate, got it</q>; <b>play</b> one of these bastards & you'll soon find it's not all so paint-by-numbers as that first impression — they're <em>rhythmic</em>, yeah, but (good) action games aren't <cite>Osu!</cite> charts.
+</p>
+<p>
+Run-based games test <dfn>con­sist­ency</dfn>, not just whether you can solve a part­icular con­undrum in iso­lation; what's more, action games tend be <dfn>chaotic</dfn>: they layer multiple overlapping threats — some of whose trajectories are manipulable or based on the player's location or state — and ask you to navigate & control them such that <em>your</em> subsequent position better sets you up for handling the next onslaught.
+</p>
+<p>
+In other words, <dfn>mistakes snowball</dfn>; tiny differ­ences in spacing or <abbr title="damage per second">DPS</abbr> or target prior­ity or what have you can multi­ply into un­recover­able (or desperation attack-necessitating) check­mate situations, like getting walled by pop­corn pot­shots in a bullet hell or finding your­self sandwiched between grapplers in a beat 'em up.
+</p>
+<p>
+Thus, while developing a game­plan for most arcade action gauntlets <em>will</em> in­volve trying to dis­cover & follow an opt­imal route (its granul­arity prim­arily limit­ed by how random or un­predict­able the program's out­puts are), this is complicated by a few factors:
+</p>
+<ol>
+<li>A truly optimal route is probably far from trivial to discover</li>
+<li>Such a route probably demands <abbr title="tool-assisted speedrun">TAS</abbr>-level execution</li>
+<li>Human im­perfect­ion admits back­up strats & wiggle room</li>
+<li>(Non-degenerate) scoring tends to raise skill ceilings to the strato­sphere</li>
+<li>Consist­ency means finding & develop­ing a game­plan that works for <em>you</em>: what sections do you want to make simpler, what sections do you want to make trickier (e.g. for score), which patterns do you want to study, which do you want to bomb through, what cues will you focus on, what will you ignore &c.
+</ol>
+
+<hr>
+
+<h3>
+Attention economy & intra-genre competence
+</h3>
+
+<p>
+Some of these games get so ballistic you'll feel like a frazzled con­ductor waving his wand at his own two eye­balls, think­ing <q>A hundred thousand years of evolution for <em>this</em> dead reckoning?</q>
+</p>
+<p>
+Such extreme granul­arity in claims on attention, strat­egic & tact­ical consider­ations, timings &c. requires a comm­unication medium more concise & be­spoke than ordinary natural lang­uage; thank­fully, gamers have already developed a robust jargon around games about shoot­ing & brawl­ing.
+</p>
+<p>
+So not only can you trans­late many <dfn>legacy skills</dfn> be­tween games in these classic arcade genres, but the terms you use to de­scribe their mechanics, dynamics, compositions & situ­ations are also quite portable & generic — a pattern language.
+</p>
+
+</section>
+
+<hr>
+<figure class="banner">
+<img src="images/zakotaku/ikaruga-warning.webp">
+</figure>
+
+<section id="syntax">
+
+<hgroup>
+<h2>
+Syntax
+</h2>
+</hgroup>
+
+<p>
+With this portability in mind, <b>Zakotaku</b> is designed to be light­weight, editor-agnostic, idiomatic (i.e. leveraging conventional domain nomenclature), telescopic (i.e. flexible in express­ing desired level of detail) & easily extensible/configurable.
+</p>
+<p>
+It's a controlled language, not a formal language; it's not intended to be machine-executable or to describe systems & processes with industrial or academic rigor; it's merely intended as an expedient, share­able transcript format side­stepping some of the ambi­guities & clunk­iness of English sentences by adopt­ing a more compact & consist­ent grammar, ortho­graphy & lexicon.
+</p>
+<p>
+The basic syntax consists of <abbr title="end-of-line">EOL</abbr>-terminated blocks of case-insensitive plain­text designated as either:&ensp;<dfn>Front matter</dfn> · <dfn>Caption</dfn> · <dfn>Comment</dfn> · <dfn>Ruler</dfn> · <dfn>Definition</dfn> or <dfn>Script</dfn>.
+</p>
+
+<div id="front-matter">
+<hgroup>
+<h3>
+Front matter
+</h3>
+<h4>
+general transcript metadata
+</h4>
+</hgroup>
+<p>
+Game & publication info, like the colophon of a book.
+</p>
+<p>
+Front matter goes at the beginning of a <b>Zakotaku</b> transcript, and ends with a Markdown-style <s>page break</s> of 2 empty lines or an empty line followed by at least 2 dashes (<code>--</code>) followed by another empty line.
+</p>
+<p>
+Data may be declared in <code>key: value</code> format, but this isn't strictly necessary; it's expected that the title of the game or piece being studied will go on the first line, followed optionally by the version & category being run, the player's personal goal(s), acknowledgements, byline & date.
+</p>
+<p>
+A line beginning with <code>by</code> is assumed to indicate the author, a line in month-year or month-day-year format (e.g. <code>11-25</code> or <code>11/25</code>) is assumed to indicate publication date, and a line beginning with <code>cf.</code> or a reference mark (※) is assumed to indicate citation.
+</p>
+<br>
+<table>
+<thead>
+<th>
+Key
+</th>
+<th>
+Meaning
+</th>
+<th>
+Example
+</th>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>title</code>
+</td>
+<td>
+game being run or studied
+</td>
+<td>
+<code>DoDonPachi DaiOuJou</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>version</code>
+</td>
+<td>
+platform, label, port
+</td>
+<td>
+<code>Black Label</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>category</code>
+</td>
+<td>
+difficulty, mode, character
+</td>
+<td>
+<code>A-EXY</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>goal</code>
+</td>
+<td>
+clear, score, loop, time
+</td>
+<td>
+<code>1-All</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>cite</code>
+</td>
+<td>
+shout-outs, guides, replays
+</td>
+<td>
+<code>※ PAN</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>author</code>
+</td>
+<td>
+player, scribe
+</td>
+<td>
+<code>by Widge_Wemnin</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>edition</code>
+</td>
+<td>
+date, revision
+</td>
+<td>
+<code>v2 11-25</code>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<fieldset>
+<legend>
+Example
+</legend>
+<code>
+<pre>
+DoDonPachi DaiOuJou
+Black Label
+A-EXY
+1-All
+※ PAN
+by Widge_Wemnin
+v2 10-25
+
+---
+</pre>
+</code>
+</fieldset>
+</div>
+
+<div id="caption">
+<hgroup>
+<h3>
+Caption
+</h3>
+<h4>
+segment heading
+</h4>
+</hgroup>
+<p>
+Captions function as scene headings for stages & individual segments — discrete chunks of game­play that the author wishes to study as a unit, which may be followed by one or multi­ple lines of script.
+</p>
+<p>
+They can be formatted by placing at least 3 hyphens (&nbsp;<code>-</code>&nbsp;), equals signs (&nbsp;<code>=</code>&nbsp;) or underscores (&nbsp;<code>_</code>&nbsp;) under a single line of text contain­ing the contents of the heading.
+</p>
+<p>
+Captions don't require any parti­cular data, but typical inform­ation would be things like stage/level number or name (and subsection) · mnemonic land­marks like back­grounds, musical cues, enemy entrances or spell cards · sub­goals (upon entering or exiting the segment) & progress/consistency tracking for self-assessment & diffi­culty rating purposes; these may be de­limited by punct­uation marks like a solidus (&nbsp;<code>/</code>&nbsp;) or vertical pipe (&nbsp;<code>|</code>&nbsp;). 
+</p>
+<br>
+<table>
+<thead>
+<th>
+Datum
+</th>
+<th>
+Meaning
+</th>
+<th>
+Example
+</th>
+</thead>
+<tbody>
+<tr>
+<td>
+Stage
+</td>
+<td>
+loop, section
+</td>
+<td>
+<code>1-4</code>
+</td>
+</tr>
+<tr>
+<td>
+Relay
+</td>
+<td>
+landmark, <abbr title="background music">BGM</abbr>, encounter, checkpoint
+</td>
+<td>
+<code>ZIPPERS</code>
+</td>
+</tr>
+<tr>
+<td>
+Subgoal
+</td>
+<td>
+<abbr title="personal best">PB</abbr>, grade, rank, resources, extends
+</td>
+<td>
+<code>HYPER x2</code>
+</td>
+</tr>
+<tr>
+<td>
+Consistency
+</td>
+<td>
+confidence, risk, progress
+</td>
+<td>
+<code>60%</code>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<fieldset>
+<legend>
+Example
+</legend>
+<code>
+<pre>
+1-5 | ZIPPERS | HYPER x2 | 60%
+------------------------------
+</pre>
+</code>
+</fieldset>
+</div>
+
+<div id="ruler">
+<hgroup>
+<h3>
+Ruler
+</h3>
+<h4>
+timing chart
+</h4>
+</hgroup>
+<p>
+Specific timings may be suggested graphically by means of rulers: simple 1-dimensional charts terminated by vertical pipes (<code>|</code>), with units of passive time indicated by dashes (<code>-</code>) & events indicated by X's or saltires.
+</p>
+<p>
+Rulers are placed below captions & above each line of script whose events they plot.
+</p>
+<br>
+<fieldset>
+<legend>
+Example
+</legend>
+<code>
+<pre>
+|---X--X----X---X--|
+</pre>
+</code>
+</fieldset>
+</div>
+
+
+<div id="comment">
+<hgroup>
+<h3>
+Comment
+</h3>
+<h4>
+note, aside, admonition, cue, observation, citation, conjecture
+</h4>
+</hgroup>
+<p>
+Comments may be included under a caption or in isolation.
+</p>
+<p>
+They're indicated by beginning a line with 2 dashes (<code>--</code>) followed by a space or by enclosing an entire line in parentheses, and may be used to write out notes in more verbose/ordinary language; as such, they ignore the formatting used for script data.
+</p>
+<br>
+<fieldset>
+<legend>
+Example
+</legend>
+<code>
+<pre>
+-- zippers spawn at rng x-pos
+</pre>
+</code>
+</fieldset>
+</div>
+
+<div id="definition">
+<hgroup>
+<h3>
+Definition
+</h3>
+<h4>
+dictionary entry
+</h4>
+</hgroup>
+<p>
+Defines a term.
+</p>
+<p>
+Dictionary entries are written in <a href="https://yaml.org/" target="_blank">YAML</a>, a data serialization format where tuples are declared in key-value pairs, and values may be separated by commas.
+</p>
+<p>
+Definitions must include at least one <dfn>term</dfn>, <dfn>type</dfn> & <dfn>gloss</dfn>, and optionally may include <dfn>genre</dfn>, <dfn>brief</dfn> & <dfn>symbol</dfn>; only one <dfn>type</dfn> is allowed per definition.
+</p>
+<p>
+Terms & abbreviations may be ordered according to preference; see <a href="#config">Config</a>.
+</p>
+<br>
+<table>
+<thead>
+<th>
+Key
+</th>
+<th>
+Meaning
+</th>
+<th>
+Example value
+</th>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>lemma</code>
+</td>
+<td>
+canonical form of term being defined
+</td>
+<td>
+<code>self-destruct, suicide</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>type</code>
+</td>
+<td>
+category term belongs to
+</td>
+<td>
+<code>mv</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>genre</code>
+</td>
+<td>
+style of game indicated to avoid confusion with overlapping jargon <small><em>(optional)</em></small>
+</td>
+<td>
+<code>stg</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>brief</code>
+</td>
+<td>
+abbreviation, acronym
+</td>
+<td>
+<code>sd, s/d</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>symbol</code>
+</td>
+<td>
+single Unicode glyph stand-in <small><em>(optional)</em></small>
+</td>
+<td>
+<code>🅌</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>gloss</code>
+</td>
+<td>
+denotation, verbose explication
+</td>
+<td>
+<code>"strategic suicide, e.g. to reduce rank"</code>
+</td>
+</tr>
+</tbody>
+</table>
+<dl>
+<dt>Types</dt>
+<table>
+<tbody>
+<tr>
+<td>
+<code>mv</code>
+</td>
+<td>
+Maneuver
+</td>
+</tr>
+<tr>
+<td>
+<code>nme</code>
+</td>
+<td>
+Enemy
+</td>
+</tr>
+<tr>
+<td>
+<code>pow</code>
+</td>
+<td>
+Power-up
+</td>
+</tr>
+<tr>
+<td>
+<code>ga</code>
+</td>
+<td>
+Gauge
+</td>
+</tr>
+<td>
+<code>atr</code>
+</td>
+<td>
+Attribute
+</td>
+</tr>
+</tr>
+<tr>
+<td>
+<code>ptn</code>
+</td>
+<td>
+Pattern
+</td>
+</tr>
+<tr>
+<td>
+<code>traj</code>
+</td>
+<td>
+Trajectory
+</td>
+</tr>
+</tr>
+<tr>
+<td>
+<code>con</code>
+</td>
+<td>
+Connective
+</td>
+</tr>
+<tbody>
+</table>
+</dl>
+<dl>
+<dt>Genres</dt>
+<table>
+<tbody>
+<tr>
+<td>
+<code>stg</code>
+</td>
+<td>
+shmup, shoot 'em up, shooter, danmaku, bullet hell
+</td>
+</tr>
+<tr>
+<td>
+<code>bmup</code>
+</td>
+<td>
+beat 'em up, brawler
+</td>
+</tr>
+<tr>
+<td>
+<code>fg</code>
+</td>
+<td>
+fighting game, fighter
+</td>
+</tr>
+<tr>
+<td>
+<code>cag</code>
+</td>
+<td>
+character action, spectacle fighter, hack 'n slash, cuhrayzee game
+</td>
+</tr>
+<tr>
+<td>
+<code>tile</code>
+</td>
+<td>
+puzzle, Tetris, Sokoban, match-3
+</td>
+</tr>
+<tr>
+<td>
+<code>pin</code>
+<td>
+pinball, pachinko
+</td>
+</tr>
+<tr>
+<td>
+<code>rng</code>
+</td>
+<td>
+run 'n gun, platform, maze chase
+</td>
+</tr>
+<tr>
+<td>
+<code>race</code>
+</td>
+<td>
+racing, driving
+</td>
+</tr>
+<tbody>
+</table>
+</dl>
+<br>
+<fieldset>
+<legend>
+Example
+</legend>
+<code>
+<pre>
+term: self-destruct, suicide
+type: mvr
+genre: stg
+brief: sd, s/d
+symbol: 🅌
+gloss: "strategic suicide, e.g. to reduce rank"
+
+--
+</pre>
+</code>
+</fieldset>
+</div>
+
+<div>
+<hgroup>
+<h3>
+Script
+</h3>
+<h4>
+route prescription & level description
+</hgroup>
+<p>
+The meat of <b>Zakotaku</b>.
+</p>
+<p>
+<dfn>Scripts</dfn> are written in blocks of one or multi­ple lines of text consist­ing of terms belong­ing to the follow­ing types: <dfn>Maneuver</dfn> · <dfn>Enemy</dfn> · <dfn>Power-up</dfn> · <dfn>Gauge</dfn> · <dfn>Attribute</dfn> · <dfn>Pattern</dfn> · <dfn>Trajectory</dfn> & <dfn>Connective</dfn>, as well as decimal numerals.
+</p>
+<p>
+Terms are assign­ed a type primar­ily to dist­inctly style each phrase or connect­ive in a script for easier human pars­ing at a glance, but also to help with auto­complete filter­ing & similar <abbr title="quality of life">QOL</abbr> features.
+</p>
+<br>
+<dl>
+<dt>
+Maneuver
+</dt>
+<p>
+Prompts for actions to be per­formed by the player, includ­ing in-game moves that affect game-state such as de­stroy­ing a target or acquiring a power-up, out-of-world actions such as creating save states, and cues which don't dir­ect­ly affect state such as dir­ect­ions for where to focus one's attention.
+</p>
+</dl>
+<br>
+<dl>
+<dt>
+Enemy
+</dt>
+<p>
+Instances of discrete non-player agents, entities, char­acters, forces & hazards: rivals, fodder, mooks, bosses, mini­bosses, build­ings, armors, targets, ordnance &c.
+</p>
+</dl>
+<br>
+<dl>
+<dt>
+Power-up
+</dt>
+<p>
+Items, munitions & resources pro­cured by the player: ammo, fuel, pick-ups, drops, pellets, orbs, coins &c.
+</p>
+</dl>
+<br>
+<dl>
+<dt>
+Gauge
+</dt>
+<p>
+Abstract parameters, statistics & mechanisms: score, fire rate, weapon level, rank, <abbr title="hit points">HP</abbr>, drop table &c.
+</p>
+</dl>
+<br>
+<dl>
+<dt>
+Attribute
+</dt>
+<p>
+Accidental properties describing & determining instanced objects: color, size, status, position, damage &c.
+</p>
+</dl>
+<br>
+<dl>
+<dt>
+Pattern
+</dt>
+<p>
+Composite hazards & level elements cons­idered as a group, especially as they fit into an identi­fiable arche­type: enemy form­ations, attacks, bullet curtains, spell cards, platoons, waves, gauntlets &c. 
+</p>
+</dl>
+<br>
+<dl>
+<dt>
+Trajectory
+</dt>
+<p>
+Vernacular descript­ions of what would math­ematic­ally be described by para­metric equations: paths of motion, evolution, dynamics & (non-player) behavior. 
+</p>
+</dl>
+<br>
+<dl>
+<dt>
+Connective
+</dt>
+<p>
+Conjunctions, relations, logic operators, punctuation, delimiters, conditionals, limits &c. 
+</p>
+</dl>
+</div>
+
+<section id="dictionary">
+
+<h2>
+Dictionary
+</h2>
+
+<p>
+<mark>Coming soon!</mark>
+</p>
+
+</section>
+
+<section id="formatting">
+
+<h2>
+Formatting
+</h2>
+
+<div>
+<h3>
+Prettyprint
+</h3>
+</div>
+
+<div id="config">
+<h3>
+Config
+</h3>
+</div>
+
+<div>
+<h3>
+Substitutions
+</h3>
+</div>
+
+<div>
+<h3>
+Icons
+</h3>
+</div>
+
+<div>
+<h3>
+Inline markup
+</h3>
+</div>
+
+<div>
+<h3>
+Ctags
+</h3>
+</div>
+
+<p>
+<mark>Coming soon!</mark>
+</p>
+
+</section>
+
+<section id="transcripts">
+
+<h2>
+Transcripts
+</h2>
+
+<p>
+<mark>Coming soon!</mark>
+</p>
+
+</section>
+
+<section id="acknowledgements">
+
+<h2>
+Acknowledgements
+</h2>
+
+<p>
+<mark>Coming soon!</mark>
+</p>
+
+</section>
+
+<footer>
+Robin Mendoza <time><script>document.write(new Date().getFullYear())</script></time>
+</footer>
+
+</main>
+
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+/>
+
+</body>
+
+</html>

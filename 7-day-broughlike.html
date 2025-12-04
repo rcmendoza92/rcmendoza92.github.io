@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+<title>
+7 Day Broughlike | Robin Mendoza
+</title>
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+/>
+<meta charset="utf-8"/>
+<meta
+name="description"
+content="Portfolio for game designer Robin Mendoza."
+/>
+<meta
+name="author"
+content="Robin Mendoza"
+/>
+
+<link
+rel="stylesheet"
+media="screen and (orientation: landscape)"
+href="landscape.css"
+/>
+<link
+rel="stylesheet"
+media="screen and (orientation: portrait)"
+href="portrait.css"
+/>
+<link
+rel="icon"
+href="images/icons/favicon.png"
+/>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik|Averia|Kosugi|Kosugi Maru|Averia Libre|Averia Serif Libre">
+
+</head>
+
+<body>
+
+<header>
+<a href="http://robinmendoza.net">
+<img src="images/icons/monogram.svg">
+</header>
+
+<nav>
+<li>
+<a href="zakotaku.html">
+Zakotaku
+</a>
+</li>
+<li>
+<a href="essays.html">
+Talks & essays
+</a>
+<menu>
+<li>
+<a href="#top" id="current">
+7 Day Broughlike
+</a>
+</li>
+</menu>
+</li>
+<li>
+<a href="graphics.html">
+Graphics
+</a>
+</li>
+<li>
+<a href="photography.html">
+Photography
+</a>
+</li>
+<li>
+<a href="controllers.html">
+Controllers
+</a>
+</li>
+<li>
+<a href="screenplays.html">
+Screenplays
+</a>
+</li>
+<li>
+<a href="favorite-games.html">
+Favorite 64
+</a>
+</li>
+</nav>
+
+<main>
+
+<article>
+
+<hgroup>
+<h2>
+7 Day Brough­like
+</h2>
+</hgroup>
+
+<section>
+
+<p class="incipit">
+<strong>From June</strong> 2<sup>nd</sup> to June 9<sup>th</sup> myself, <a href="https://benal.itch.io/" target="_blank">Ben Allen</a> & <a href="https://itch.io/profile/kjeann" target="_blank">kjeann</a> hosted the inaug­ural 7 Day Broughlike (#7DBL) game jam on <a href="<a href="https://itch.io/jam/broughlike" target="_blank">itch.io</a>.
+</p>
+<p>
+About a year ago Alex Chen (<a href="https://vivafringe.wordpress.com/" target="_blank">vivafringe</a>) created the <a href="https://discord.com/invite/xVwDAjZ" target="_blank">Brough Games</a> Discord server, where the jam was first pro­posed & then organ­ized; vivafringe had previ­ously prov­ided some much-appreci­ated Brough game comment­ary, includ­ing a Cinco Paus <a href="https://vivafringe.wordpress.com/2018/06/08/cinco-paus-strategy-guide/" target="_blank">strat­egy guide</a> & <a href="https://www.youtube.com/playlist?list=PLVkyA1oDHBa_PGysiUQ_kGaCorynP21O9" target="_blank">comment­ated vods</a> of Imbroglio's Izu Mode (like a daily challenge but for every 4 days); really valu­able stuff, especi­ally for those look­ing to penet­rate under the sur­face of these some­times inscrut­able creations.
+</p>
+<p>
+When it comes to appreci­ating the work of <a href="https://www.smestorp.com/" target="_blank">Michael Brough</a>, there is current­ly, as Frank Lantz <a href="https://gamedesignadvance.com/?p=3229" target="_blank">put it</a>, <q>the thrill of be­ing on the in­side of a grand secret, mem­bers of an elite cabal</q> — but with­out a dedi­cated forum in which his cult could gather, its fer­vent Portuguese murmur­ings might have grown hoarse with desper­ation, or — what's worse — tapered off into silence.
+</p>
+<p>
+A clear nod to the annual <a href="https://7drl.com/" target="_blank">7DRL</a> (7-Day Rogue­like) chall­enge, an indie insti­tution which mid­wifed Brough's own <cite>Zaga-33</cite> & <cite>868-HACK</cite> (in the form of its prototype <cite>86856527</cite>), the 7 Day Brough­like jam in­tends to clar­ify, inter­pret & ex­tend the ideas & tech­niques that make Brough's games — many (but far from all) of which could be called <em>coffee break</em> or <em>minim­alist</em> rogue­likes — so intr­iguing.
+</p>
+
+<hr/>
+<figure class="landscape">
+<img src="images/essays/7dbl/zaga33.webp">
+<figcaption>
+<cite>Zaga-33</cite>
+</figcaption>
+</figure>
+
+</section>
+<section>
+
+<p class="incipit">
+<strong>Here's the</strong> copy I wrote (with input from the Discord) attempt­ing to de­fine <dfn>Brough­like</dfn> for the jam page on itch:
+</p>
+<fieldset>
+<legend>
+Over­view
+</legend>
+<br>
+<p>
+The goal of this jam is to create a Brough­like in 7 days.
+</p>
+<p>
+That is, to create a game in the style of Michael Brough (@smestorp), a pixel wizard whose high­ly com­pressed de­signs are cher­ished for their ele­gance, depth, and enig­matic odd­ness.
+</p>
+<p>
+Though an emer­ging and flexi­ble sub-genre, certain re­curring stress­es are char­acter­istic of Brough's approach:
+<ul>
+<li>Small, square boards & square int­egers</li>
+<li>Ortho­gonal 4-way move­ment</li>
+<li>Parity & <i>zugz­swang</i> (or <s>com­pulsion to move</s> i.e. in­ability to freely <s>pass</s> a turn)</li>
+<li>Stream­lined con­trols e.g. attack­ing with the same in­put as move­ment</li>
+<li>Rogue­like mech­anics like proc­edural level gen­er­ation, perma­death, tele­port, poly­morph etc.</li>
+<li>Numer­ology i.e. consp­icuous­ly cons­is­tent int­egers</li>
+<li><s>Glitch</s> mech­anics/aesth­etics</li>
+<li>Ident­ification & de­crypt­ion</li>
+<li>Pos­itional tact­ics: push­ing, pull­ing, choke points & egress</li>
+<li>Diff­erent­iated re­source bi­naries e.g. cred­its & en­ergy, blood & mana etc.</li>
+<li>Un­con­vent­ional scor­ing syst­ems</li>
+<li>Idio­sync­ratic art & audio</li>
+<li>Topo­logies, synch­ronies, over­lapping mat­rices</li>
+</ul>
+</p>
+</fieldset>
+
+<hr/>
+<figure class="landscape">
+<img src="images/essays/7dbl/pfvb.webp">
+<figcaption>
+<cite>Post-Future Vaga­bond</cite>
+</figcaption>
+</figure>
+
+</section>
+
+<section>
+<p class="incipit">
+<strong>I think</strong> the key word is really <b>com­pressed</b>; Brough has tried his hand at many genres, but the engine driv­ing each de­sign is his commit­ment to com­pression.
+</p>
+<p>
+Most oft­en this mani­fests in the first point: super low-res square grids — 9x9, 7x7, 6x6, 5x5, 4x4; tight boards force more inter­action be­tween elem­ents, denser tact­ics, more over­lap.
+</p>
+<p>
+And <em>over­lapping</em> really be­comes kind of a leit­motif wind­ing through his corpus — the traj­ect­ory from <cite>Game Title</cite>'s X-Y swapping tele­porter to <cite>Lost Levels</cite>' item stack­ing to <cite>Corrypt</cite>'s over­write mad­ness (and over­world/under­world di­chot­omy) is esp­ecially en­light­en­ing, but that notion of mapping some matrix onto a dungeon's under­lying tile grid shows up promin­ently in more re­cent eff­orts like <cite>Imbroglio</cite> & <cite>Cinco Paus</cite> as well — even <cite>868-HACK</cite> plays with this in its own way, princ­ipally through the Glitch enemy's ab­ility to move onto wall tiles (and its obvi­ous count­er, <code>.DEBUG</code>, whose de­script­ion reads <code>TERMINATE OVERLAPPING</code>).
+</p>
+<p>
+Of course glitches also show up again & again; we see them in <cite>Lost Levels</cite>' over­flow ex­ploit, in <cite>Corrypt</cite>'s unwieldy <s>magic</s>, in <cite>Post-Future Vagabond</cite>'s shared save file shenan­igans & in <cite>Helix</cite>'s script-flipping patho­gen, an addit­ion Brough him­self <a href="http://mightyvision.blogspot.com/2014/10/helix.html" target="_blank">deemed</a> <q>sub­lime.</q>
+</p>
+<p>
+Brough's feli­city for glitch­es arises from a sensi­tivity to what he calls soft­ware's low-level <a href="https://www.youtube.com/watch?v=RYXInr3N5UQ" target="_blank">grain</a>; the sur­prise with which he en­count­ers these eff­ects as a pro­grammer gets trans­lated for play­ers into the frisson of sub­verted ex­pect­ations, of ex­otic elec­tronic demons de­stabil­izing other­wise highly symmet­rical, de­term­in­istic syst­ems.
+</p>
+
+<hr/>
+<figure class="landscape">
+<img src="images/essays/7dbl/game-title.webp">
+<figcaption>
+<cite>Game Title</cite>
+</figcaption>
+</figure>
+
+</section>
+<section>
+
+<p class="incipit">
+<strong>Which brings</strong> us to prob­ably the sec­ond most im­port­ant con­cept anim­ating Brough's creat­ions: <dfn>parity</dfn> — that is, the cond­ition of be­ing even or odd.
+</p>
+<p>
+Brough­like tact­ics typic­ally re­volve a­round managing par­ity or one could say getting <s>in sync</s> with your enemies: if you're two spaces away from an enemy & then use your turn to move adj­acent to it, that enemy gets to stay put & use its turn to get the first attack in.
+</p>
+<p>
+<dfn>Zugz­swang</dfn> means you can't simp­ly (free­ly) pass your turn to have that enemy move into pos­ition adj­acent to you; oft­en, how­ever, you'll have re­sources prov­iding opt­ions for flipping par­ity, like <cite>Cinco Paus</cite>' wands or <cite>Imbroglio</cite>'s char­acter-spec­ific rune ab­ilities.
+</p>
+<p>
+On a deep­er level, Brough's port­folio const­itutes a perspi­cacious bal­ancing act be­tween rigor­ous, obs­essive symm­etry & tossed-off — or eq­ually obstin­ate — asymm­etry; his games are these lapi­dary loupes illum­in­ating some of the pro­found­est myst­eries of math­ematics, yet they come to us in the rags of acid-fried death maze fever dreams from the proto­zoic early 80's.
+</p>
+<p>
+Yet it's hard for me not to view Brough's cata­log as the mesmer­izing navel of gaming in the 2010's; it's all there, every trend & genre, swirl­ing to­gether in a candy-colored spiral:
+<ul>
+<li>Glitch</li>
+<li>Low-fi</li>
+<li>Retro</li>
+<li>Gen­erative art</li>
+<li>Rogue­likes</li>
+<li><abbr title="multiplayer online battle arena">MOBA</abbr>s</li>
+<li>Deck-build­ing</li>
+<li>Time-gating</li>
+<li>Local multi­player</li>
+<li>Mobile</li>
+<li>Chain games</li>
+<li>Albums</li>
+<li>Re­mixes</li>
+<li>De­makes</li>
+<li>Parodies</li>
+<li>Cheeky concept­ual provo­cations</li>
+<li>Sokoban-flavored mind­fucks</li>
+<li>Earnest <i>sui generis</i> art games
+<li>Twine</li>
+</ul>
+<p>
+To my mind <b>the</b> rep­resent­ative genius to em­erge from the past dec­ade's fert­ile indie game milieu, Brough's highly indiv­iduated inst­incts are very much a prod­uct of that cult­ure & its myriad pag­eants, jams & forums: Ludum Dare, Pirate Kart, TIGSource, Glorious Train­wrecks, SHARECART1000, Super Friend­ship Club, Retro Re­makes & of course 7DRL.
+</p>
+
+<hr/>
+<figure class="landscape">
+<img src="images/essays/7dbl/cybergallop.webp">
+<figcaption>
+<cite>Cybergallop</cite>
+</figcaption>
+</figure>
+
+</section>
+
+<section>
+<p class="incipit">
+<strong>And now</strong> we've come full circle.
+</p>
+<p>
+Michael's made a lot of games — at least 50.
+</p>
+<p>
+I listed just 4 of them on the jam page, leaving out his lat­est re­lease, <cite>Cinco Paus</cite>; <cite>Cinco Paus</cite> is a con­tender for best game ever made; un­fortun­ately, its high-res hand-drawn art style & port­rait-orient­ed aspect ratio didn't look good in small screen­shots along­side the other games' chunky pixels — oh well.
+</p>
+<p>
+The games that we did list — <cite>868-HACK</cite>, <cite>Post-Future Vagabond</cite>, <cite>Zaga-33</cite> & <cite>Game Title</cite> — all seemed especially <s>Brough­like</s> to me, or at least cut from the same cloth, and estab­lish­ing cert­ain obv­ious & rep­licable con­vent­ions for their fact­ure.
+</p>
+<p>
+We didn't stop at Brough's out­put, how­ever; we also cited ex­amples of games prod­uced by other authors in the same spirit; authors inc­luding Kenny Sun, Tom Francis, Jonathan Whiting & Sean Barrett.
+</p>
+<p>
+One can see that we left the jam's prompt pretty wide open; after all, we're not re­form­ing some widely fam­iliar trad­ition, we're inv­iting cur­ious jammers to try on an emer­ging idiom.
+</p>
+
+<hr/>
+<figure class="landscape">
+<img src="images/essays/7dbl/promesst.webp">
+<figcaption>
+<cite>Promesst</cite>
+</figcaption>
+</figure>
+
+</section>
+<section>
+
+<p class="incipit">
+<strong>That being</strong> said, I do think there's a sense that Brough has in re­cent years, with works like <cite>868-HACK</cite> & <cite>Cinco Paus</cite>, spear­headed some­thing like a genu­inely new sub­genre, one that's robbed me of my patience for many other styles.
+</p>
+<p>
+These curious pocket rogue­likes have an immed­iacy, a simp­licity & a crack­ling, compul­sive random­ness, but also a tact­ical depth, arc­ane myst­ique & high con­cept brav­ura that sug­gest a truly rob­ust & fec­und pattern for fut­ure elab­or­ation.
+</p>
+<p>
+When sift­ing through own ideas & comp­aring them to Brough's games, it became clear­er & clear­er to me that his stuff is not just eleg­ant, not just cereb­ral, but <b>fun</b> — cheeky — and, per­haps more import­antly, <b>well-paced</b>.
+</p>
+<p>
+Periods of low-anxiety flow are punct­uated by bottle­necks of risk assess­ment, with snappy arcade-simple in­put (and near-inst­ant out­put) moving things along at a player-deter­mined <i>rubato</i>.
+</p>
+<p>
+His best games have an appreci­able drama­tic arc where­in open­ing & end­game prov­ide inter­esting chall­enges as mirror images of each other, be it <cite>Imbroglio</cite>'s weap­on level vs. spawn freq­uency or <cite>Cinco Paus</cite>' wand know­ledge vs. enemy tough­ness (not to ment­ion the arti­facts, up­grades & enemy ab­ilities to be found in multi-game streaks) — arcs which grow up org­an­ic­ally out of the games' core tensions.
+</p>
+
+<hr/>
+<figure class="landscape">
+<img src="images/essays/7dbl/chang-chang.webp">
+<figcaption>
+<cite>Chang Chang</cite>
+</figcaption>
+</figure>
+
+</section>
+<section>
+
+<p class="incipit">
+<strong>Anyway,</strong> on to the jam!
+</p>
+<p>
+We got a bunch of fasci­nating ent­ries, but here's just a few of my favor­ites:
+</p>
+
+<hr>
+
+<h3>
+Mortacrust (You Gotta Rake)
+</h3>
+<h4>
+Z. Bill
+</h4>
+<p>
+Hey, what's a plat­former doing here!?
+</p>
+<p>
+Delight­fully weird, humor­ously grating mech­anic of alter­nating every turn be­tween moving either left or right (ascend­ing bone ladders auto­mat­ically) & raking either left or right; your trusty rake, nat­urally, de­stroys or trans­forms cert­ain adj­acent blocks if they're at your height & catches cert­ain adj­acent blocks if they're above you & bound to fall; later levels intro­duce a nifty photo­copier block.
+</p>
+<p>
+An un­ortho­dox but wel­come take on <i>zugz­swang</i>.
+</p>
+
+<hr>
+
+<h3>
+SQUIBIDI
+</h3>
+<h4>
+Ahmed Khalifa
+</h4>
+<p>
+Move­ment in the dir­ect­ion you're current­ly facing is free & re­charges your ink; chang­ing dir­ection costs ink but also funct­ions as offense, lay­ing a bomb in the oppos­ite dir­ection.
+</p>
+
+<hr>
+
+<h3>
+Xryst-HAL
+</h3>
+<h4>
+Lucas Le Slo
+</h4>
+<figure class="right">
+<img src="images/essays/7dbl/xryst-hal.webp">
+</figure>
+<p>
+Charge up your (auto­matic) ranged attack, push & shoot cryst­als, de­stroy sock­et guards to leave zap traps, tele­port be­tween corn­ers & acclim­ate to the weird­ness of a board that ex­pands each level. 
+</p>
+<p>
+Enig­matic and styl­ish.
+</p>
+
+<hr>
+
+<h3>
+Hladová zeď
+</h3>
+<h4>
+Jonathan Brodsky
+</h4>
+<p>
+Uses edge walls & attract­ion to neat eff­ect, req­uiring you to pull the titu­lar <s>hungry wall</s> through blood splatt­ers left by enemies spawn­ed at gates that are them­selves pull­able edge walls; up­on be­ing fed, the hungry wall con­fers a consum­able power-up.
+</p>
+
+<hr>
+
+<h3>
+Perdurabo
+</h3>
+<h4>
+Nilson Carroll
+</h4>
+<p>
+<abbr>RPG</abbr> Maker main­stay de­livers an abs­tract, melan­choly slice of glitch hell: Thoth tarot key­cards, in­scrut­able manual check­point place­ment (sort of like <cite>Game Title</cite>'s <code>CAT</code>... I think), secret rooms, bound­ary breaks & snippets of angst in Arabic-style letter­ing.
+</p>
+
+<hr>
+
+<h3>
+Vlad the Bleeder
+</h3>
+<h4>
+magmafortress
+</h4>
+<figure class="right">
+<img src="images/essays/7dbl/vlad.webp">
+</figure>
+<p>
+Impress­ively co­her­ent hexa­gonal tact­ics: switch be­tween human, bat & ghost form, either by having satis­fied a req­uisite cond­ition the turn be­fore (such as taking dam­age or kill­ing an enemy) or by elect­ing to spend mana, which is picked up on the map.
+</p>
+<p>
+Kind of sim­ilar to Tom Francis' <cite>Morphblade</cite>, but also kind of sim­ilar to Brough's own entry.
+</p>
+<p>
+Speak­ing of which...
+</p>
+
+<hr>
+
+<h3>
+P1 Select
+</h3>
+<h4>
+Michael Brough
+</h4>
+<p>
+That's right, we re­ceived a sub­mission from the mighty Smestorp him­self (the nerve!).
+</p>
+<p>
+Since then he's ex­panded & polish­ed it into a full comm­ercial re­lease; his own thoughts on the matter here.
+</p>
+<p>
+Some­what slight comp­ared to a <cite>Cinco Paus</cite> of course but brill­iant none­the­less:
+</p>
+<ul>
+<li>
+Wrapping 3x3 char­acter sel­ect grid on top of non-wrapp­ing 4x4 rooms
+</li>
+<li>
+Title as prompt
+</li>
+<li>
+Glitch joke as tutor­ial
+</li>
+<li>
+Delayed joke re­prise via unlock­able up­grade (<q>have my cake and eat it later</q>)
+</li>
+<li>
+Tab­ular HP distri­bution
+</li>
+<li>
+Foot­ball-style attack pattern dia­grams
+</li>
+<li>
+Synth squelch SFX
+</li>
+<li>
+Burgundy & chart­reuse on gray­scale
+</li>
+<li>
+Scoring syst­em on roll­ing aver­age
+</li>
+<li>
+Decimals
+</li>
+</ul>
+<p class="halmos">
+Midas.
+</p>
+
+</section>
+
+<hr/>
+<aside>
+<p class="dateline">
+August 2019
+</p>
+</aside>
+
+</article>
+
+<footer>
+Robin Mendoza <time><script>document.write(new Date().getFullYear())</script></time>
+</footer>
+
+</main>
+
+<script
+src="https://www.youtube.com/iframe_api"
+/>
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+/>
+
+</body>
+
+</html>

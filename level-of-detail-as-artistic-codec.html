@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+<title>
+Level-of-detail as artistic codec | Robin Mendoza
+</title>
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+/>
+<meta charset="utf-8"/>
+<meta
+name="description"
+content="Portfolio for game designer Robin Mendoza."
+/>
+<meta
+name="author"
+content="Robin Mendoza"
+/>
+
+<link
+rel="stylesheet"
+media="screen and (orientation: landscape)"
+href="landscape.css"
+/>
+<link
+rel="stylesheet"
+media="screen and (orientation: portrait)"
+href="portrait.css"
+/>
+<link
+rel="icon"
+href="images/icons/favicon.png"
+/>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik|Averia|Kosugi|Kosugi Maru|Averia Libre|Averia Serif Libre">
+
+</head>
+
+<body>
+
+<header>
+<a href="http://robinmendoza.net">
+<img src="images/icons/monogram.svg">
+</header>
+
+<nav>
+<li>
+<a href="zakotaku.html">
+Zakotaku
+</a>
+</li>
+<li>
+<a href="essays.html">
+Talks & essays
+</a>
+<menu>
+<li>
+<a href="#top" id="current">
+Level-of-detail…
+</a>
+</li>
+</menu>
+</li>
+<li>
+<a href="graphics.html">
+Graphics
+</a>
+</li>
+<li>
+<a href="photography.html">
+Photography
+</a>
+</li>
+<li>
+<a href="controllers.html">
+Controllers
+</a>
+</li>
+<li>
+<a href="screenplays.html">
+Screenplays
+</a>
+</li>
+<li>
+<a href="favorite-games.html">
+Favorite 64
+</a>
+</li>
+</nav>
+
+<main>
+
+<article>
+
+<hgroup>
+<h2>
+Level-of-detail as artistic codec
+</h2>
+</hgroup>
+
+<section>
+
+<p class="incipit">
+<strong>3D games</strong>, especially those with a non-fixed cam­era, typic­ally have some sort of level-of-detail (<abbr>LOD</abbr>) sol­ution in their render­ing pipe­line.
+</p>
+<p>
+These can in­clude <dfn title="multiple resolution scales of a given texture">mipmaps</dfn>, <dfn>pro­gressive meshes</dfn>, <dfn title="2D flats">bill­boards</dfn>, <dfn>dist­ance fog</dfn> & <dfn>virtual­ization</dfn> i.e. stream­ing of text­ure & even geo­metry data as in Un­real En­gine 5’s Nanite sys­tem.
+</p>
+<p>
+What I’d like to pro­pose is the use of <abbr>LOD</abbr> solut­ions not only for re­ducing alias­ing & perform­ance over­head but also for esth­etic emph­asis.
+</p>
+<p>
+Often <abbr>LOD</abbr>s are judg­ed on their invis­ibility — any notice­able arti­facts, like pop-in, are cons­idered undesir­able, and sub­stit­utions be­tween assets of vary­ing qual­ity idea­lly would pres­ent the illu­sion of per­fect cont­inuity.
+</p>
+
+<hr/>
+<figure class="landscape">
+<img src="images/essays/lod/spyro.gif">
+<figcaption>
+<cite>Spyro the Dragon</cite>, 1998
+</figcaption>
+</figure>
+
+</section>
+<section>
+
+<p class="incipit">
+<strong>There are</strong> examples though, if few, of games whose <abbr>LOD</abbr>s add their own esth­etic ideas to the over­all present­ation; I be­lieve that study­ing such ex­amples — and coming up with your own — can not only help make a ubi­quitous class of tech­niques in real-time comp­uter graphics <em>emphatic</em> rather than merely ser­vile, but can also accent­uate the dis­tinct pleas­ures of real-time graph­ics in gen­eral.
+</p>
+<p>
+The way I pro­pose to think about a <abbr>LOD</abbr> sys­tem is as an <dfn>artistic codec</dfn>: like a video codec, a <abbr>LOD</abbr> sys­tem can be thought to com­press the vis­ual inform­ation in a given scene or frame accord­ing to var­iable para­meters; and by <s>art­istic</s> codec, I mean those para­meters can be adj­usted for expr­essive ends.
+</p>
+
+<hr/>
+<figure class="landscape">
+<img src="images/essays/lod/popo.jpg">
+<figcaption>
+<cite>Popo's Tower</cite>, 2020
+</figcaption>
+</figure>
+
+</section>
+<section>
+
+<p class="incipit">
+<strong>The style</strong> of a dist­inctive painter could be said to be their <dfn>comp­ression algo­rithm</dfn>: the unique tun­ing of weights & biases with which they simp­lify a given scene and pres­ent it as a pict­ure — what they emph­asize, what they coll­apse, how they manage & mix focal lengths, how they play favor­ites when choos­ing to con­vey diff­erent materials & opt­ical phe­nomena — all of which is going to be info­rmed by that painter’s refer­ences and infl­uences — and rare­ly is a great paint­ing’s total eff­ect predic­ated on its fidel­ity to one over­riding ref­erent.
+</p>
+<p>
+Some of the most stimul­ating plas­tic art, I would posit, is charact­erized by <em>indeterminacy</em> — the way the obj­ects in a still life can seem to be paint­ed from mult­iple view­points, at mult­iple slices of time, with vary­ing lev­els of ac­uity, in diff­erent modes: sketchy, orna­mental, sculpt­ural, cari­catured, <i>trompe l’oeil</i>.
+</p>
+<p>
+Though there are obvi­ously differ­ences be­tween the static image of a paint­ing & the dyn­amic anim­ation of game soft­ware render­ing to a dis­play, there are some worth­while ideas from the for­mer that can act­ually en­hance the dyna­mism of the latter; two notions I’d like to high­light are what I’ll call <dfn>focal­ization</dfn> and <dfn>rhythm</dfn>.
+</p>
+<dfn>Focalization</dfn> here means fluid, dynamic perspective — the virt­ual world & its det­ails can be con­veyed in multi­ple moods, so to speak, and we can even interp­olate be­tween these.
+</p>
+<p>
+By <dfn>rhythm</dfn> I mean the var­iation in inten­sity acr­oss sur­faces; how dense and intri­cate is the det­ailing of one texture next to its neigh­bors? and one neigh­borhood next to an­other?
+</p>
+
+<hr/>
+<figure class="landscape">
+<img src="images/essays/lod/umbrella.webp">
+<figcaption>
+<cite>Rainy Season</cite>, 2020
+</figcaption>
+</figure>
+
+</section>
+<section>
+
+<p class="incipit">
+<strong>With some</strong> ingenuity your level-of-detail system can assist in manag­ing these moods & caden­ces; it’s my opin­ion that many 3D games, by emul­ating one target ref­erent (whether that’s photo­realism or a styl­ized idiom like, say, <i>ligne claire</i> comics) — and trying to render every comp­onent of a scene with the same appar­ent level of fid­elity — inadvert­ently sacri­fice cont­rast & depth & end up with what I would cons­ider a flat, homo­geneous pic­ture.
+</p>
+<p>
+What I would advo­cate for, in con­cert with an art-directed <abbr>LOD</abbr> sol­ution, is the layer­ing of shad­ers to get a kind of mixed-refer­ent or <s>synth­etic</s> render.
+</p>
+<p>
+Take <cite>Breath of the Wild</cite>: each frame is a <a href="https://www.youtube.com/watch?v=By7qcgaqGI4" target="_blank">composite</a> of up to 9 mater­ial mask layers: terrain · foliage · water · skin · hair · eyes · textiles · metals · water — each of which behaves differ­ently at differ­ent dist­ances & under differ­ent light­ing cond­itions. 
+</p>
+<p>
+Not only does this improve legi­bility for the player (both by diff­erent­iating kinds of phys­ical obj­ects & by red­ucing overall visual noise) but it also gives each material type its own charm­ing red­uctive sign­ature.
+</p>
+
+<hr/>
+<figure class="landscape">
+<img src="images/essays/lod/tlg.webp">
+<figcaption>
+<cite>The Last Guardian</cite>, 2016
+</figcaption>
+</figure>
+
+</section>
+<section>
+
+<p class="incipit">
+<strong>Team Ico</strong> / genDESIGN take a similar approach with their render­ing, as in 2016’s <cite>The Last Guardian</cite>.
+</p>
+<p>
+The boy’s flesh appears almost incand­escent — its tone is consist­ently unmodul­ated, its shadows are consist­ently satur­ated, fancy disturb­ances in opacity such as sub­surface scatter­ing in the ears are reserved for ex­treme close-ups — and its callow bees­wax even­ness sticks out nicely against the setting’s intricate, weath­ered stone­work & shimmer­ing veget­able life.
+</p>
+<p>
+A more extreme ex­ample of this kind of actor-back­ground con­trast can be found in Marvel’s <cite>Spider-Man</cite>, if the player has equip­ped the cel-shaded <a href="https://www.youtube.com/watch?v=h7hYrKLI7R0" target="_blank">Spider-Clan</a> suit.
+</p>
+<p>
+To my eyes this cartoon­ified costume makes the <abbr title="physically-based rendering">PBR</abbr> surround­ings <b>way</b> more con­vincing — sure, the picture takes on a bit of a <cite>Who Framed Roger Rabbit</cite> effect, but... so what? Leaving the eerie <b>construct­edness</b> of the anim­ation unre­solved need not compro­mise the virtual world’s sense of presence & co­hesion — after all, convent­ional notions of immer­sion are based on <a href="https://www.blog.radiator.debacle.us/2013/05/on-focalization-and-against-convenient.html" target="_blank">fallacies</a> which have little to do with the subtle pro­cesses of ident­ification & alien­ation that go on in an actual player’s mind.
+</p>
+<p>
+Getting back to <abbr>LOD</abbr>s per se though, this idea of hetero­geneous compo­siting can be applied to detail-manage­ment tech­niques like mip­maps, to some­times in­genious effect.
+</p>
+<p>
+With the rise of sophist­icated shader techno­logy, the manual insert­ion of mip levels has become some­thing of a lost art; Nintendo was especially skilled at layer­ing simple text­ures to create some really cheap yet lovely dist­ance-based effects: check out how they did the <a href="https://blog.mecheye.net/2018/03/deconstructing-the-water-effect-in-super-mario-sunshine/" target="_blank">water</a> in <cite>Super Mario Sunshine</cite>.
+</p>
+
+<hr/>
+<figure class="landscape">
+<img src="images/essays/lod/sotc.jpg">
+<figcaption>
+<cite>Shadow of the Colossus</cite>, 2005
+</figcaption>
+</figure>
+
+</section>
+<section>
+
+<p class="incipit">
+<strong>Another</strong> sixth generation game with some really interest­ing graph­ics <a href="https://www.youtube.com/watch?v=FAQjESB4WOk" target="_blank">tech</a> (and another Team Ico title) is 2005’s <cite>Shadow of the Colossus</cite>.
+</p>
+<p>
+Streaming a large open world in real­time on the PlayStation 2, distant objects trans­ition from soft-focus bill­board to simp­lified mesh to full geo­metry as the camera draws closer with an effect like disper­sing a veil of glau­cous fog.
+</p>
+<p>
+Post-processing like filters can also con­tribute to detail manage­ment; two games that rely heav­ily on a paint­erly, impression­istic distance filter are Nintendo’s <cite>Skyward Sword</cite> & Eskil Steenberg’s <a href="persistence-of-vision.html" target="_blank">ill-fated</a> <abbr>MMOFPS</abbr> <cite>Love</cite>.
+</p>
+<p>
+The extreme reduc­tion in feat­ural inform­ation at far dist­ances makes similar solut­ions pretty much un­feasible if you need a high level of acuity for every­thing on­screen, but the sens­ation of bring­ing obj­ects into focus as you move through the virtual world is one of those prim­ordial kine­matic amuse­ments video games are poised to provide.
+</p>
+<p>
+Which is the other point I wanted to make here: in add­ition to reducing per­formance over­head <b>and</b> in add­ition to help­ing manage vis­ual hier­archies, esthetic­ally-minded level-of-detail syst­ems can also en­hance the sens­ation of para­llax that is one of the basic Sega-esque pleas­ures of 3D gaming in the first place.
+</p>
+
+<hr/>
+<figure class="landscape">
+<img src="images/essays/lod/ab-cop.webp">
+<figcaption>
+<cite>A.B. Cop</cite>, 1991
+</figcaption>
+</figure>
+<figure class="landscape">
+<img src="images/essays/lod/spider-clan.webp">
+<figcaption>
+<cite>Marvel's Spider-Man</cite>, 2018
+</figcaption>
+</figure>
+
+</section>
+<section>
+
+<p class="incipit">
+<strong>I want to</strong> see games whose worlds <b>breathe</b> like an accord­ion: text­ures & decals fill­ing in or bleed­ing to­gether in a multi-tiered port­folio of expand­ing & collaps­ing detail, almost like a pop-up book; you don’t need to lit­erally embrace a story­book or cute­sy visual theme to just­ify this kind of visual art­ifice, either — though while we’re on the subject, take a look at the way the grass blades in <cite>Animal Crossing: New Horizons</cite> turn from erect pennants to flattened <i>terrazzo</i> as they're scrolled away from the rolling pin horizon.
+</p>
+<p>
+<dfn>Foliage</dfn> is prec­isely the sort of big scary monster well-engin­eered <abbr>LODs</abbr> are poised to tame: a notor­iously hard problem in real­time render­ing, with seem­ingly no con­sensus reached on best practices, foliage practic­ally demands thrift.
+</p>
+<p>
+I mean think about it: your render­er is drawing a frame — some hills, logs, a rock out­crop­ping, ok, and then suddenly, passing over these relat­ively sens­ible meshes, it runs into some hell­ish tangle of cross­cutting quads & jutt­ing tri­angles, and what — each one is sup­posed to cast a shadow on the other? and scatter sun­light through its trans­lucent leaves, which by the way are waving in the wind?
+</p>
+
+<hr/>
+<figure class="landscape">
+<img src="images/essays/lod/uccello.jpg">
+<figcaption>
+Paolo Uccello, <cite>The Hunt in the Forest</cite>, 1470
+</figcaption>
+</figure>
+
+</section>
+<section>
+
+<p class="incipit">
+<strong>It could</strong> help to simp­lify a veget­ation-dense scene such as a forest by break­ing it down into a sort of vertic­ally orien­ted typo­logy which in eco­logy is called <a href="https://en.wikipedia.org/wiki/Stratification_(vegetation)" target="_blank" class="wiki">stratification</a>: carpet, under­growth, stem, fruit, canopy; think­ing of each of these genera as a nice chunky piece of the sceno­graphic puzzle can help you decide how you want to in­divid­ually shade them, almost like styling a markup tag with style­sheets.
+</p>
+<p>
+For example:
+<ul class="simple">
+<li>
+<dfn>Carpet:</dfn> a jazzy arab­esque of mottled purple soil litter­ed with orange pine needles.
+</li>
+<li>
+<dfn>Undergrowth:</dfn> a jost­ling, self-shadow­ing crowd of stenciled leaf shapes studded with gradient-air­brushed low-poly flowers.
+</li>
+<li>
+<dfn>Stem:</dfn> a hypo­style <i>mezquita</i> in pro­nounced atmos­pheric per­spective.
+</li>
+<li>
+<dfn>Fruit:</dfn> para­llax-mapped cones and cavity-mapped quinces.
+</li>
+<li>
+<dfn>Canopy:</dfn> solid poly­hedra wrapped with scint­illating noise textures.
+</li>
+</ul>
+</p>
+
+<hr/>
+<figure class="landscape">
+<img src="images/essays/lod/hockney-2010.jpg">
+<figcaption>
+David Hockney, <cite>Under the Trees, Bigger</cite>, 2010
+</figcaption>
+</figure>
+
+<figure class="portrait">
+<img src="images/essays/lod/hockney-2008.jpg">
+<figcaption>
+David Hockney, <cite>Astray</cite>, 2008
+</figcaption>
+</figure>
+
+<figure class="landscape">
+<img src="images/essays/lod/woldgate-woods-ii.jpg">
+<figcaption>
+David Hockney, <cite>Woldgate Woods II</cite>, 2006
+</figcaption>
+</figure>
+
+</section>
+<section>
+
+<p class="incipit">
+<strong>David Hockney’s</strong> large late canvases provide a val­uable example of land­scape art which marries orna­mental abstract­ion with immers­ive, salu­brious depth.
+</p>
+<p>
+Notice how the regions of plant life con­verge into more highly peri­odic patterns as they approach the horizon, how close obser­vation feeds the fire of passion­ate exagger­ation; now imagine all this in motion — imagine sift­ing through these layers in real­time, watch­ing as each oblong freckle on a tree trunk’s bark shrivels into a labyr­inthine whorl, as the lines that defined the leaves of a bank of weeds bulge and scatter into a flocc­ulent spray.
+</p>
+<p>
+You could also have an <b>inverted</b> acuity gradient, with closer forms more abs­tract and farther regions more accurate, as in the lo-fi photo­grammetry approach of Ian MacLarty’s <cite>Southbank Portrait</cite> or Zheng Fang's <cite>Ru Cun Chu Cheng</cite>.
+</p>
+<p>
+There’s defin­itely some digi­tal phyto­poesis out there which achieves felic­ity in simpli­fication: <cite>The Witness</cite> & <cite>Rainy Season</cite> are two examples that immediately come to mind; but even then, they maybe lack the myst­ical obsess­iveness & favor­itism that charact­erizes the best land­scape art — would we cherish the work of Samuel Palmer if he cared for every growth-form as much as he cared for fluffy vernal blooms?
+</p>
+
+<hr/>
+<figure class="landscape">
+<img src="images/essays/lod/southbank-portrait.webp">
+<figcaption>
+<cite>Southbank Portrait</cite>, 2015
+</figcaption>
+</figure>
+
+<figure class="landscape">
+<img src="images/essays/lod/table.webp">
+<figcaption>
+<cite>Ru Cun Chu Cheng</cite>, 2022
+</figcaption>
+</figure>
+
+<figure class="landscape">
+<img src="images/essays/lod/palmer.jpg">
+<figcaption>
+Samuel Palmer, <cite>Cow Lodge with a Mossy Roof</cite>, 1829
+</figcaption>
+</figure>
+
+</section>
+<section>
+
+<p class="incipit">
+<strong>I’ll just</strong> wrap things up here with a nod to the idea of <dfn>economy</dfn>; I think aud­iences appre­ciate it (more than they’re often given credit) when they feel an artist has spent their lim­ited re­sources wisely: re­cycled anim­ations, kit­bashing, <i>spolia</i> — resource­fulness, guided by vision, en­genders a sense of eleg­ance — even if it’s a kludgy sort of eleg­ance.
+</p>
+<p class="halmos">
+Having your level-of-detail sol­ution part­icipate ostent­atiously in the manage­ment of such re­sources can, I believe, deepen & enrich 3D video games’ uni­quely dynamic & kine­matic visual & kine­sthetic ges­talt.
+</p>
+
+</section>
+
+<hr/>
+<aside>
+<p class="dateline">
+June 2023
+</p>
+</aside>
+
+</article>
+
+<footer>
+Robin Mendoza <time><script>document.write(new Date().getFullYear())</script></time>
+</footer>
+
+</main>
+
+<script
+src="https://www.youtube.com/iframe_api"
+/>
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+/>
+
+</body>
+
+</html>

@@ -1,0 +1,1080 @@
+
+@font-face {
+  font-family: 'Rubik Regular';
+  src: url(fonts/rubik/rubik-regular.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Rubik Medium';
+  src: url(fonts/rubik/rubik-medium.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Rubik Semibold';
+  src: url(fonts/rubik/rubik-semibold.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Rubik Bold';
+  src: url(fonts/rubik/rubik-bold.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Rubik Italic';
+  src: url(fonts/rubik/rubik-italic.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Rubik Medium Italic';
+  src: url(fonts/rubik/rubik-mediumitalic.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Rubik Semibold Italic';
+  src: url(fonts/rubik/rubik-semibolditalic.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Rubik Light';
+  src: url(fonts/rubik/rubik-light.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Rubik Light Italic';
+  src: url(fonts/rubik/rubik-lightitalic.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Rubik Bold Italic';
+  src: url(fonts/rubik/rubik-bolditalic.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Rubik Extrabold';
+  src: url(fonts/rubik/rubik-extrabold.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Rubik Extrabold Italic';
+  src: url(fonts/rubik/rubik-extrabolditalic.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Rubik Black';
+  src: url(fonts/rubik/rubik-black.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Rubik Black Italic';
+  src: url(fonts/rubik/rubik-blackitalic.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Rubik Mono One Regular';
+  src: url(fonts/rubik/rubikmonoone-regular.ttf) format("truetype");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Routed Gothic';
+  src: url(fonts/routedgothic/routed-gothic.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Routed Gothic Narrow';
+  src: url(fonts/routedgothic/routed-gothic-narrow.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Routed Gothic Narrow Half Italic';
+  src: url(fonts/routedgothic/routed-gothic-narrow-half-italic.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Routed Gothic Narrow Italic';
+  src: url(fonts/routedgothic/routed-gothic-narrow-italic.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Routed Gothic Half Italic';
+  src: url(fonts/routedgothic/routed-gothic-half-italic.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Routed Gothic Italic';
+  src: url(fonts/routedgothic/routed-gothic-italic.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Routed Gothic Wide';
+  src: url(fonts/routedgothic/routed-gothic-wide.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Routed Gothic Wide Half Italic';
+  src: url(fonts/routedgothic/routed-gothic-wide-half-italic.ttf) format("truetype");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Donmeh';
+  src: url(fonts/donmeh/donmeh.otf) format("opentype");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Kosugi Maru';
+  src: url(fonts/kosugi/kosugimaru.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Kosugi Regular';
+  src: url(fonts/kosugi/kosugi-regular.ttf) format("truetype");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Fetamont Bold Script';
+  src: url(fonts/fetamont/ffmbw10.otf) format("opentype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Fetamont Condensed';
+  src: url(fonts/fetamont/ffmc10.otf) format("opentype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Fetamont Bold Condensed';
+  src: url(fonts/fetamont/ffmbc40.otf) format("opentype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Fetamont Bold Script Oblique';
+  src: url(fonts/fetamont/ffmbwo10.otf) format("opentype");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Mosk Normal 400';
+  src: url(fonts/mosk/mosk normal 400.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Mosk Medium 500';
+  src: url(fonts/mosk/mosk medium 500.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Mosk Semi-Bold 600';
+  src: url(fonts/mosk/mosk semi-bold 600.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Mosk Bold 700';
+  src: url(fonts/mosk/mosk bold 700.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Mosk Extra-Bold 800';
+  src: url(fonts/mosk/mosk extra-bold 800.ttf) format("truetype");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Mosk Light 300';
+  src: url(fonts/mosk/mosk light 300.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Mosk Normal 400';
+  src: url(fonts/mosk/mosk normal 400.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Mosk Medium 500';
+  src: url(fonts/mosk/mosk medium 500.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Mosk Semi-Bold 600';
+  src: url(fonts/mosk/mosk semi-bold 600.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Mosk Bold 700';
+  src: url(fonts/mosk/mosk bold 700.ttf) format("truetype");
+  font-display: fallback;
+}
+@font-face {
+  font-family: 'Mosk Extra-Bold 800';
+  src: url(fonts/mosk/mosk extra-bold 800.ttf) format("truetype");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Anaktoria';
+  src: url(fonts/anaktoria/anaktoria.otf) format("opentype");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'CMU Typewriter Text Italic';
+  src: url(fonts/cmu/cmunit.ttf) format("truetype");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'CMU Typewriter Text Bold';
+  src: url(fonts/cmu/cmuntb.ttf) format("truetype");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'CMU Typewriter Text BoldItalic';
+  src: url(fonts/cmu/cmuntx.ttf) format("truetype");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'CMU Concrete BoldItalic';
+  src: url(fonts/cmu/cmunobi.ttf) format("truetype");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Averia Serif Libre Bold Italic';
+  src: url(fonts/averia/averiaseriflibre-bolditalic.ttf) format("truetype");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Averia Libre Bold Italic';
+  src: url(fonts/averia/averialibre-bolditalic.ttf) format("truetype");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Averia Libre Italic';
+  src: url(fonts/averia/averialibre-italic.ttf) format("truetype");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Averia Serif Libre Italic';
+  src: url(fonts/averia/averiaseriflibre-italic.ttf) format("truetype");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Averia Serif Libre Regular';
+  src: url(fonts/averia/averiaseriflibre-regular.ttf) format("truetype");
+  font-display: fallback;
+}
+
+p {
+	font-family: 'Rubik Regular';
+	font-size: 1em;
+	line-height: 1.5;
+	text-wrap: pretty;
+}
+
+::selection {
+	background-color: #fff7d6;
+  color: #35301D;
+  text-shadow: 0 0 0.12em rgb(70%,60%,30%);
+	text-decoration: none;
+}
+
+p a:link, p a:visited, ul a:link, ul a:visited {
+	font-family: 'Rubik Medium';
+	font-weight: normal;
+	outline: 0;
+	color: rgb(100%,100%,92%);
+	background: none;
+	text-shadow: 0em 0em 0.4em #fff1a4, 0.2em 0.2em 0.2em #25221a;
+	box-shadow: none;
+	text-decoration: 1px underline dotted rgba(100%,100%,80%,0.5);
+}
+
+p a:active, ul a:active {
+  text-decoration: none;
+  outline: 0;
+  color: #fff7d6;
+  text-shadow: 0em 0em 0.7em #fff1a4, 0.25em 0.25em 0.25em #25221a;
+}
+
+p a:hover, li a:hover {
+	font-style: normal;
+	background-color: rgb(100%,100%,92%);
+  box-shadow: 0em 0em 0.4em #fff1a4;
+  color: #35301D;
+	padding-block: 0.04em;
+	padding-inline: 0.2em;
+	margin-inline: -0.2em;
+  text-shadow: 0 0 0.12em rgb(70%,60%,30%);
+	border-radius: 2px;
+	text-decoration: none;
+}
+
+strong {
+	font-family: 'Donmeh';
+	font-size: 1.15em;
+	line-height: 0.5;
+	margin-right: 0.25em;
+}
+
+p.incipit {
+	text-indent: -1em;
+}
+
+p.incipit::first-letter {
+	font-family: 'Donmeh';
+	font-size: 1.5em;
+}
+
+p.halmos::after {
+	content: ' ∎';
+}
+
+p.just {
+	text-align: justify;
+}
+
+small {
+	font-family: 'Rubik Light';
+	font-size: 0.875em;
+}
+
+small abbr {
+	font-family: 'Fetamont Condensed';
+}
+
+small a:link, small a:visited {
+	font-family: 'Rubik Regular';
+}
+
+time {
+	font-family: 'Rubik Light';
+	font-size: 0.875em;
+}
+
+figcaption time, figcaption small {
+	font-size: 0.875em;
+	margin-left: 0.2em;
+}
+
+i {
+	font-family: 'Anaktoria';
+	font-size: 1.15em;
+	font-style: normal;
+	line-height: 1.2;
+}
+
+em {
+	font-family: 'Rubik Italic';
+	font-style: normal;
+}
+
+b {
+	font-family: 'Rubik Medium Italic';
+	font-style: normal;
+	font-weight: normal;
+}
+
+q {
+	/* quotes: '« ' ' »' '‹ ' ' ›'; */
+	quotes: none;
+	font-family: 'Routed Gothic Half Italic';
+	margin-inline: 0.085em;
+}
+
+q b, q em {
+	font-family: 'Routed Gothic Narrow Italic';
+}
+
+q::before, q::after {
+	font-family: 'Rubik Regular';
+}
+
+u {
+	font-family: 'Routed Gothic Narrow Half Italic';
+	text-decoration: none;
+	margin-inline: -0.4em;
+}
+
+u::before {
+	content: '🗦';
+}
+
+u::after {
+	content: '🗧';
+}
+
+pre {
+	font-family: 'Rubik Italic';
+	font-style: normal;
+	line-height: 1.15;
+	margin-left: 1em;
+}
+
+code pre {
+	font-family: 'Kosugi Maru';
+}
+
+p code {
+	margin-inline: 0.5em;
+}
+
+del {
+	font-family: 'Rubik Light Italic';
+	color: rgba(100%,100%,80%,0.5);
+	text-shadow: none;
+	padding: 0.15em;
+	background: none;
+	text-decoration: 2px line-through rgba(100%,100%,80%,0.3);
+}
+
+s {
+	font-family: 'Rubik Italic';
+	text-decoration: none;
+}
+s::before {
+	content: '« ';
+}
+s::after {
+	content: ' »';
+}
+
+blockquote {
+	font-family: 'Averia Libre Italic';
+	margin-block: 1.5em;
+	margin-right: 4em;
+	font-size: 1.075em;
+	line-height: 1.2em;
+	text-align: justify;
+}
+
+blockquote cite {
+	font-family: 'Averia Serif Libre Italic';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.085em;
+	line-height: 1.25em;
+}
+
+sub, sup {
+	font-style: normal;
+}
+
+rt {
+	font-family: 'Kosugi Maru';
+	font-style: normal;
+}
+
+dfn {
+	font-family: 'Rubik Semibold';
+	font-style: normal;
+	text-decoration: none;
+}
+
+abbr {
+	font-family: 'Fetamont Bold Condensed';
+	font-style: normal;
+	text-decoration: none;
+}
+
+p cite, li cite {
+	font-family: 'Fetamont Bold Script Oblique';
+	font-size: 1.085em;
+	font-style: normal;
+	font-weight: normal;
+	margin-inline: 0.15em;
+}
+
+code {
+	font-family: 'Kosugi Maru';
+	font-style: normal;
+}
+
+samp {
+	font-family: 'Kosugi Maru';
+	font-style: normal;
+	text-transform: uppercase;
+	font-size: 0.875em;
+}
+
+samp::before {
+	content: '[ ';
+}
+
+samp::after {
+	content: ' ]';
+}
+
+kbd {
+	font-family: 'Kosugi Maru';
+	font-style: normal;
+	padding-inline: 0.15em;
+	color: #fff7d6;
+	background: none;
+	margin-inline: 0.25em;
+	text-decoration: none;
+	border: 1.5px dotted rgba(100%,100%,80%,0.5);
+	border-radius: 4px;
+}
+
+mark {
+	font-family: 'Rubik Medium';
+	font-style: normal;
+	color: #fff7d6;
+	background: none;
+	margin-inline: 0.25em;
+	text-decoration: none;
+	padding-inline: 0.15em;
+	border: 1.5px dotted rgba(100%,100%,80%,0.5);
+	border-radius: 4px;
+}
+
+ins {
+	font-family: 'Rubik Italic';
+	text-decoration: 1px underline dashed rgba(100%,100%,80%,0.5);
+}
+
+aside {
+	font-style: normal;
+	font-size: 0.875em;
+	margin-top: 1.15em;
+	line-height: 1.385;
+}
+
+aside p {
+	font-family: 'Rubik Light';
+}
+
+p.dateline {
+	font-family: 'Rubik Light Italic';
+	text-align: right;
+	margin-right: 5%;
+}
+
+p.nb::before {
+	content: '☡ Note: ';
+	font-family: 'Rubik Medium';
+	margin-right: 0.5em;
+	float: left;
+}
+
+p.info::before {
+	content: '🛈 Info: ';
+	font-family: 'Rubik Medium';
+	margin-right: 0.5em;
+	float: left;
+}
+
+p.role::before {
+	content: '⚝ Role: ';
+	font-family: 'Rubik Medium';
+	margin-right: 0.5em;
+	float: left
+}
+
+p.tools::before {
+	content: '⏣ Tools: ';
+	font-family: 'Rubik Medium';
+	margin-right: 0.5em;
+	float: left;
+}
+
+p.tools {
+	word-spacing: 0.5em;
+}
+
+fieldset {
+	width: 80%;
+	border-color: rgba(100%,100%,80%,0.5);
+	border-width: 1.5px;
+	border-style: dotted;
+	border-radius: 4px;
+	padding-inline: 1em;
+}
+
+legend {
+	font-family: 'Rubik Italic';
+	font-size: 1.08em;
+}
+
+summary {
+	font-family: 'Rubik Medium';
+	font-size: 1.125em;
+	margin-bottom: 0.2em;
+	font-weight: normal;
+}
+
+summary:hover {
+	cursor: pointer;
+}
+
+details {
+	margin-bottom: 1em;
+}
+
+details p {
+	font-family: 'Rubik Regular';
+	font-style: normal;
+	margin-left: 1.5em;
+}
+
+var {
+	font-family: 'Anaktoria';
+	font-style: normal;
+}
+
+body {
+	color: rgb(100%,100%,92%);
+	background-color: #1f1804;
+	background-image: url("images/homepage/bg-hori.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	max-width: 100%;
+	overflow-x: hidden;
+	min-height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	font-size: 16px;
+	text-shadow: 0 0 0.285rem rgb(95%,95%,85%), 0 0 1.67rem #fff1a4, 0.22rem 0.22rem 0.15rem #1f1804;
+}
+
+main {
+	font-family: 'Rubik Regular', monospace;
+	text-align: left;
+	margin-left: 5%;
+	max-width: 85vmin;
+}
+
+nav {
+	font-family: 'Rubik Regular';
+	text-align: right;
+	z-index: 2;
+	font-size: 1em;
+	line-height: 1.67;
+	list-style: none;
+	margin-right: 6vw;
+	text-overflow: ellipsis;
+}
+
+nav a:link, nav a:visited {
+	text-decoration: none;
+  color: #fff7d6;
+  text-shadow: 0em 0em 0.4em #fff1a4, 0.25em 0.25em 0.25em #25221a;
+}
+
+#current, nav a:hover {
+	font-family: 'Rubik Medium';
+	background-color: rgb(100%,100%,85%);
+  box-shadow: 0 0 0.4em #fff1a4;
+  color: #31281f;
+  padding-block: 0.12em;
+	padding-inline: 0.3em;
+	border-radius: 2px;
+  text-shadow: 0 0 0.12em rgb(70%,60%,30%);
+	font-size: 0.95em;
+}
+
+#current {
+	margin-left: -0.5em;
+}
+
+menu {
+	font-family: 'Rubik Italic';
+	list-style: none;
+	line-height: 1.5;
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+	font-size: 0.875em;
+	overflow-x: hidden;
+}
+
+p.links a:link, p.links a:visited {
+	margin-right: 1.4em;
+}
+
+p.links a:hover {
+	margin-right: 1.2em;
+}
+
+header{
+	display: float;
+	width: 10em;
+	height: 10em;
+}
+
+header img {
+	box-shadow: none;
+}
+
+h1 {
+	font-family: 'Mosk Bold 700';
+	font-size: 3.5em;
+	font-weight: normal;
+	font-style: normal;
+	margin-top: 1em;
+	text-align: center;
+}
+
+h2 {
+	font-family: 'Mosk Semi-Bold 600';
+	text-align: left;
+	font-size: 2.25em;
+	font-weight: normal;
+}
+
+h3 {
+	font-family: 'Rubik Medium';
+	text-align: left;
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+h4 {
+	font-family: 'Rubik Regular';
+	text-align: left;
+	font-size: 0.85em;
+	margin-top: -1.385em;
+	font-weight: normal;
+}
+
+h5 {
+	font-family: 'Rubik Mono One Regular';
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+h5 + h4 {
+	font-family: 'Rubik Light';
+	margin-top: -2.215em;
+}
+
+h2 + h3 {
+	margin-top: -1.3em;
+}
+
+h2 + h4 {
+	margin-top: -1.8em;
+}
+
+hgroup {
+	margin-bottom: 3em;
+}
+
+hr {
+	text-align: center;
+	color: rgba(100%,100%,80%,1.0);
+	border-style: none;
+	margin-block: 1.5em;
+}
+
+ul hr {
+	margin-block: 0.6em;
+}
+
+section {
+	padding-top: 2em;
+	margin-bottom: 2em;
+}
+
+img {
+	width: 100%;
+	box-shadow: 6px 6px 8px #25221a;
+}
+
+img.transparent {
+	box-shadow: none;
+	filter: drop-shadow(8px 8px 10px #25221a);
+}
+
+figure {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+figure.portrait {
+	width: 75%;
+}
+
+figure.landscape {
+	width: 90%;
+}
+
+figure.square {
+	width: 80%;
+}
+
+figure.banner {
+	width: 97%;
+}
+
+figure.scroll {
+	width: 65%;
+}
+
+figure.right {
+	width: 200px;
+	height: 200px;
+	float: right;
+	margin-left: 1.5em;
+}
+
+figure.left {
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin-right: 1.5em;
+}
+
+figcaption {
+	font-family: 'Rubik Regular';
+	text-align: right;
+	margin-right: auto;
+	font-size: 0.875em;
+}
+
+figcaption cite {
+	font-family: 'Rubik Italic';
+	font-style: normal;
+}
+
+dt {
+	font-family: 'Rubik Medium';
+	font-size: 1.2em;
+	margin-bottom: 0.5em;
+	font-weight: normal;
+	margin-top: 0.85em;
+}
+
+dl.ballot dd::marker {
+	content: '☐ ';
+}
+
+dd {
+	font-family: 'Rubik Regular';
+	margin-left: 2em;
+	display: list-item;
+	line-height: 1.5;
+}
+
+dd::marker {
+	content: none;
+}
+
+dd cite {
+	font-family: 'Fetamont Bold Script Oblique';
+	font-style: normal;
+	font-weight: normal;
+	margin-inline: 0.15em;
+}
+
+ul {
+	line-height: 1.5;
+	width: 80%;
+}
+
+ul.simple li {
+	margin-bottom: 0.5em;
+}
+
+ul.simple li::marker {
+	content: none;
+}
+
+main li {
+	margin-left: -0.5em;
+}
+
+main ul li::marker {
+	content: '▪ ';
+}
+
+ol {
+	margin-top: -0.125em;
+	line-height: 1.33;
+}
+
+ol li::marker {
+	float: left;
+}
+
+caption {
+	font-family: 'Rubik Bold';
+	text-align: left;
+	font-size: 1.5em;
+	font-weight: normal;
+	margin-bottom: 0.6em;
+	padding-bottom: 0.25em;
+	border-bottom-style: dotted;
+	border-bottom-color: rgba(100%,100%,80%,0.5);
+	border-bottom-width: 1.5px;
+}
+
+th {
+	font-family: 'Rubik Semibold';
+	font-size: 1.05em;
+	font-style: normal;
+	font-weight: normal;
+	padding-bottom: 1em;
+}
+
+th, td {
+	padding-right: 1.25em;
+	line-height: 1.3;
+}
+
+td {
+	vertical-align: top;
+	padding-bottom: 0.8em;
+}
+
+tbody {
+	font-family: 'Rubik Regular';
+}
+
+td.entity {
+	font-family: 'Rubik Medium';
+}
+td.figure {
+	text-align: right;
+}
+
+tr {
+}
+
+article {
+	margin-top: 5em;
+}
+
+footer {
+	text-align: right;
+	font-size: 0.9em;
+	margin-top: 8em;
+	margin-bottom: 2em;
+}
+
+form {
+	line-height: 2;
+	padding-block: 2em;
+}
+
+input, textarea {
+	font-family: 'Kosugi Maru';
+	padding-left: 0.25em;
+	font-style: normal;
+	background-color: #fff7d6;
+	opacity: 0.5;
+  color: #35301D;
+  text-shadow: 0 0 0.12em rgb(70%,60%,30%);
+	box-shadow: 0em 0em 0.3em #fff1a4;
+	border: none;
+	border-radius: 2px;
+	margin-inline: 0.25em;
+	text-decoration: none;
+}
+
+input:focus, textarea:focus {
+	opacity: 1;
+	outline: none;
+	box-shadow: 0em 0em 0.45em #fff1a4;
+}
+
+input[type="submit"] {
+	font-family: 'Rubik Medium';
+	font-weight: normal;
+	outline: 0;
+	color: rgb(100%,100%,92%);
+	background: none;
+	text-shadow: 0em 0em 0.4em #fff1a4, 0.2em 0.2em 0.2em #25221a;
+	box-shadow: none;
+	text-decoration: none;
+	cursor: pointer;
+	padding-inline: 0.2em;
+	border: 1.5px dotted rgba(100%,100%,80%,0.5);
+	border-radius: 4px;
+	opacity: 1;
+}
+input[type="submit"]:hover {
+	font-family: 'Rubik Medium';
+	font-style: normal;
+	background-color: rgb(100%,100%,92%);
+  box-shadow: 0em 0em 0.4em #fff1a4;
+  color: #35301D;
+	padding-block: 0.04em;
+	padding-inline: 0.2em;
+  text-shadow: 0 0 0.12em rgb(70%,60%,30%);
+	border-radius: 2px;
+	text-decoration: none;
+	opacity: 1;
+}
+
+/* input[type="submit"] { */
+	/* font-family: 'Rubik Semibold'; */
+	/* margin-right: 1.8em; */
+	/* color: #fff7d6; */
+	/* opacity: 1; */
+	/* text-shadow: 0em 0em 0.25em #fff1a4, 0.2em 0.2em 0.2em #25221a; */
+	/* box-shadow: none; */
+	/* padding-left: 0.25em; */
+	/* font-style: normal; */
+	/* background: none; */
+	/* border: none; */
+	/* border-radius: 2px; */
+	/* margin-inline: 0.25em; */
+	/* text-decoration: none; */
+}
+
+/* input[type="submit"]:hover { */
+	/* cursor: pointer; */
+	/* margin-right: 1.8em; */
+	/* padding-left: 0.25em; */
+	/* font-style: normal; */
+	/* background-color: #fff7d6; */
+  /* box-shadow: 0em 0em 0.4em #fff1a4; */
+  /* color: #35301D; */
+  /* text-shadow: 0 0 0.12em rgb(70%,60%,30%); */
+	/* border: none; */
+	/* border-radius: 2px; */
+	/* text-decoration: none; */
+}
+
+iframe {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 85%;
+	height: 100%;
+	background-color: black;
+	box-shadow: 6px 6px 8px #25221a;
+	border: none;
+}
+
+div {
+	margin-block: 3em;
+}
+
+select {
+	font-style: normal;
+	background-color: rgb(100%,100%,92%);
+  color: #35301D;
+  text-shadow: 0 0 0.12em rgb(70%,60%,30%);
+	box-shadow: 0em 0em 0.3em #fff1a4;
+	border: none;
+	border-radius: 2px;
+	margin-inline: 0.25em;
+	text-decoration: none;
+}
+
+option:checked {
+	background-color: brown;
+}
